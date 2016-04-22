@@ -1,9 +1,10 @@
 package GZAndroid.Library.gztest;
 
 import com.alibaba.fastjson.JSON;
-import com.squareup.okhttp.Response;
 
 import java.io.IOException;
+
+import okhttp3.Response;
 
 /**
  * Created by GarsonZhang on 2016-04-19.

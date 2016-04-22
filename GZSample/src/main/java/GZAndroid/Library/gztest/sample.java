@@ -1,10 +1,10 @@
 package GZAndroid.Library.gztest;
 
-import com.squareup.okhttp.OkHttpClient;
-import com.squareup.okhttp.Request;
-import com.squareup.okhttp.Response;
+
 
 import GZAndroid.Common.ToastEx;
+import okhttp3.OkHttpClient;
+import okhttp3.Request;
 
 /**
  * Created by GarsonZhang on 2016-04-19.

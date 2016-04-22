@@ -1,19 +1,21 @@
 package GZAndroid.Library.gztest;
 
+
 import android.os.Handler;
 import android.os.Looper;
 import android.os.Message;
 
-import com.squareup.okhttp.Request;
-import com.squareup.okhttp.Response;
-
 import java.io.IOException;
 import java.lang.ref.WeakReference;
+
+import okhttp3.Call;
+import okhttp3.Request;
+import okhttp3.Response;
 
 /**
  * Created by GarsonZhang on 2016-04-19.
  */
-public class Callback<T> implements com.squareup.okhttp.Callback {
+public class Callback<T> implements okhttp3.Callback {
     private Parser<T> mParser;
 
     private static final int CALLBACK_SUCCESSFUL = 0x01;
@@ -34,8 +36,10 @@ public class Callback<T> implements com.squareup.okhttp.Callback {
 
     }
 
+    private Handler mHandler = new UIHandler(this);
+
     @Override
-    public void onFailure(Request request, IOException e) {
+    public void onFailure(Call call, IOException e) {
         Message message = Message.obtain();
         message.what = CALLBACK_FAILED;
         message.obj = e;
@@ -43,7 +47,7 @@ public class Callback<T> implements com.squareup.okhttp.Callback {
     }
 
     @Override
-    public void onResponse(Response response) throws IOException {
+    public void onResponse(Call call, Response response) throws IOException {
         if (response.isSuccessful()) {
             T parseResult = mParser.parse(response);
             Message message = Message.obtain();
@@ -56,8 +60,6 @@ public class Callback<T> implements com.squareup.okhttp.Callback {
             mHandler.sendMessage(message);
         }
     }
-
-    private Handler mHandler = new UIHandler(this);
 
     static class UIHandler<T> extends Handler {
         private WeakReference mWeakReference;
