@@ -1,8 +1,8 @@
 package GZAndroid.Library.okhttp.request;
 
-import com.zhy.http.okhttp.OkHttpUtils;
-import com.zhy.http.okhttp.builder.PostFormBuilder;
-import com.zhy.http.okhttp.callback.Callback;
+import GZAndroid.Library.okhttp.OkHttpUtils;
+import GZAndroid.Library.okhttp.builder.PostFormBuilder;
+import GZAndroid.Library.okhttp.callback.Callback;
 
 import java.net.FileNameMap;
 import java.net.URLConnection;

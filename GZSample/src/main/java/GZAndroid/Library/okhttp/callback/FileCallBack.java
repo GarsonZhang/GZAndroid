@@ -1,6 +1,6 @@
 package GZAndroid.Library.okhttp.callback;
 
-import com.zhy.http.okhttp.OkHttpUtils;
+import GZAndroid.Library.okhttp.OkHttpUtils;
 
 import java.io.File;
 import java.io.FileOutputStream;

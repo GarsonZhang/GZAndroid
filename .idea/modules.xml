@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/GZSample/app.iml" filepath="$PROJECT_DIR$/GZSample/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/GZAndroid.iml" filepath="$PROJECT_DIR$/GZAndroid.iml" />
+      <module fileurl="file://$PROJECT_DIR$/GZSample/GZSample.iml" filepath="$PROJECT_DIR$/GZSample/GZSample.iml" />
       <module fileurl="file://$PROJECT_DIR$/MyAndroid.iml" filepath="$PROJECT_DIR$/MyAndroid.iml" />
+      <module fileurl="file://$PROJECT_DIR$/GZSample/app.iml" filepath="$PROJECT_DIR$/GZSample/app.iml" />
     </modules>
   </component>
 </project>

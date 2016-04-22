@@ -1,7 +1,7 @@
 package GZAndroid.Library.okhttp.builder;
 
-import com.zhy.http.okhttp.request.OtherRequest;
-import com.zhy.http.okhttp.request.RequestCall;
+import GZAndroid.Library.okhttp.request.OtherRequest;
+import GZAndroid.Library.okhttp.request.RequestCall;
 
 import java.util.LinkedHashMap;
 import java.util.Map;

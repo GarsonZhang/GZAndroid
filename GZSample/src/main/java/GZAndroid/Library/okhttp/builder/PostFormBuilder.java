@@ -1,7 +1,7 @@
 package GZAndroid.Library.okhttp.builder;
 
-import com.zhy.http.okhttp.request.PostFormRequest;
-import com.zhy.http.okhttp.request.RequestCall;
+import GZAndroid.Library.okhttp.request.PostFormRequest;
+import GZAndroid.Library.okhttp.request.RequestCall;
 
 import java.io.File;
 import java.util.ArrayList;

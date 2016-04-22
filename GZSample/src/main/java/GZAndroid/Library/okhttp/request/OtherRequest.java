@@ -2,8 +2,8 @@ package GZAndroid.Library.okhttp.request;
 
 import android.text.TextUtils;
 
-import com.zhy.http.okhttp.OkHttpUtils;
-import com.zhy.http.okhttp.utils.Exceptions;
+import GZAndroid.Library.okhttp.OkHttpUtils;
+import GZAndroid.Library.okhttp.utils.Exceptions;
 
 import java.util.Map;
 
