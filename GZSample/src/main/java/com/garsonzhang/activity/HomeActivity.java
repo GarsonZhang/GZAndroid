@@ -1,6 +1,5 @@
-package com.garsonzhang.activity;
+package com.garsonzhang.Activity;
 
-import android.support.v4.widget.TextViewCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
